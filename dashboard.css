@@ -1,0 +1,558 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #191919;
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+header {
+  background-color: #191919;
+  color: #fff;
+  padding: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
+}
+
+.logo {
+  display: flex;
+}
+
+.App-header-small {
+  display: none;
+}
+
+.connect-button1 {
+  display: none;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.logo, .footer-logo {
+  font-size: 24px;
+  font-weight: normal;
+  margin-right: 80px;
+  color: #f0e9e9;
+  font-family: serif;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 34px;
+  color: #b4b4b4;
+  /* Very light color */
+  transition: color 0.3s;
+}
+
+
+.menu li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+
+.button1 {
+  background-color: #3eb489;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.connect-button {
+  background-color: #191919;
+  color: white;
+  padding: 10px 15px;
+  /* Reduce the width */
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.connect-button img {
+  margin-right: 5px;
+}
+
+.header-icon {
+  background-color: none;
+  color: white;
+  padding: 5px 5px;
+  padding-left: 15px;
+  padding-right: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+
+}
+
+.header-icon img {
+  padding-right: 5px;
+}
+
+.header-icon div {
+  padding-top: 5px;
+}
+
+/* header */
+
+.section-title-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  color: white;
+  margin-left: 150px;
+  margin-top: 2.5rem;
+}
+
+.section-description {
+  color: #cecece;
+  margin-left: 150px;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.App-card1, .App-card2 {
+  border: 1px solid #4d4d4e;
+  border-radius: 0.2rem;
+  font-size: 20px;
+  color: white;
+  width: 550px;
+
+  background-color: #151515;
+}
+
+.App-card1 {
+  margin-left: 150px;
+}
+
+.App-card2 {
+  margin-left: 15px;
+}
+
+.card-title {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.card-divider-line, .table-divider {
+
+  width: 100%;
+  /* Full width */
+  height: 1px;
+  /* Height of the line */
+  background: rgb(58, 58, 58);
+  /* Color of the line */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #cecece;
+  padding-left: 15px;
+
+}
+
+.Tooltip-handle {
+  padding-right: 10px;
+  color: #fff
+}
+
+.dashboard-card {
+  display: flex;
+}
+
+.App-card-title {
+  display: flex;
+  align-items: center;
+}
+
+.App-card-section1, .App-card-section2 {
+  display: flex;
+}
+
+.table-wrapper {
+  border: 1px solid #4d4d4e;
+  border-radius: 0.2rem;
+  font-size: 20px;
+  color: white;
+  width: 1120px;
+  margin-top: 20px;
+  margin-left: 150px;
+  background-color: #151515;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.table-icon {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+table {
+  border-spacing: 60px;
+}
+
+th, td {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.token {
+  display: flex;
+}
+
+.footer-logo {
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 600px;
+}
+
+.footer-links1 {
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+
+  text-decoration: none;
+  color: white;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.App-social-link {
+  margin-right: 40px;
+}
+
+.footer-links {
+  margin-right: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.line {
+  width: 100%;
+  /* Full width */
+  height: 1px;
+  /* Height of the line */
+  background: rgb(58, 58, 58);
+  /* Color of the line */
+  margin-top: 20px;
+}
+
+.dashboard-card2 {
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.recharts-sector:hover {
+  fill: lightblue;
+  /* Add your hover effect style here */
+}
+
+.tooltip {
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  background-color: #191919;
+  width: 300px;
+  /* max-width: 400px; */
+  border-radius: 5px;
+  height: 240px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.modal-content {
+  padding: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.Wallet-box {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Add spacing between the boxes */
+
+}
+
+.Wallet-btn {
+  background: none;
+  width: 200px;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  /* Add padding to the buttons */
+  border: 1px solid #ccc;
+  /* Add a border to the buttons */
+  border-radius: 5px;
+  /* Add border radius for rounded corners */
+}
+
+.Wallet-btn div {
+  color: white;
+}
+
+.Wallet-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.footer-links1 a {
+  margin-right: 10px;
+  /* Adjust the margin as needed */
+}
+
+.footer-links1 {
+  margin-right: 70px;
+}
+
+@media (max-width: 768px) {
+  .connect-button1 {
+    background-color: #191919;
+    color: white;
+    padding: 5px 5px;
+    /* Reduce the width */
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  }
+
+  .connect-button {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .header-container {
+    margin-left: 0;
+  }
+
+  .header-icon {
+    width: 40px;
+    height: 25px;
+    margin-left: 5px;
+  }
+
+  .logo {
+    margin-right: 10px;
+  }
+
+  .button1 {
+    margin-left: 0;
+  }
+
+  .connect-button {
+    margin-left: 0;
+
+  }
+
+  .App-header-small {
+    display: flex;
+  }
+
+  .App-header-small {
+    display: inline-block;
+    position: relative;
+  }
+
+  .menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #191919;
+    /* Background color */
+    border: 1px solid #191919;
+    width: 50vw;
+    /* Adjust the width as needed */
+    max-height: 150vh;
+    /* Adjust the max height as needed */
+    overflow-y: auto;
+    /* Add vertical scroll if necessary */
+    padding: 10px;
+    color: #cecece;
+    /* Text color */
+  }
+
+  .App-header-small:hover .menu-list {
+    display: block;
+  }
+
+  /* Style the list items as needed */
+  .menu-list li {
+    list-style: none;
+    padding: 5px 0;
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .logo-link img {
+    margin-right: 10px;
+    /* Adjust the spacing between the image and text */
+  }
+
+  .logo-link span {
+    /* white-space: nowrap; Prevent text from wrapping */
+    color: white;
+    font-size: 12px;
+  }
+
+  .dashboard-card {
+    display: inline-block;
+  }
+
+  .section-title-title, .section-description, .App-card1, .App-card2 {
+    margin-left: 10px;
+  }
+
+  .App-card1 {
+    margin-bottom: 10px;
+  }
+
+  .App-card-section1, .App-card-section2 {
+    display: inline block;
+  }
+
+  .table-wrapper {
+    margin-left: 10px;
+    width: 550px
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    width: 100px;
+  }
+
+  .footer-links1 {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    margin: auto;
+  }
+
+  .footer-links1, .footer-social-links {
+    margin-left: 20px;
+  }
+
+  .footer-links {
+    margin-bottom: 10px;
+  }
+
+  .App-card1, .App-card2, .table-wrapper {
+    width: 52vh;
+  }
+
+  table {
+    border-spacing: 10px
+  }
+
+  .table-content th, .table-content td {
+    padding: 1px;
+    /* Adjust the padding as needed */
+    font-size: 12px;
+  }
+
+  .table-content tbody tr {
+    margin: 0;
+  }
+
+  /*footer*/
+  .footer-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo, .footer-social-links, .footer-links1 {
+    margin-left: 100px;
+  }
+
+  .footer-links-2 {
+    margin-left: 28px;
+    margin-bottom: 10px;
+  }
+
+  .footer-links-3 {
+    margin-left: 40px;
+  }
+}

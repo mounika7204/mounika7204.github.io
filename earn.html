@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romi-finance</title>
+    <link rel="stylesheet" type="text/css" href="styles/earn.css">
+</head>
+
+<body>
+    <div class="earn-container">
+        <header>
+            <div class="header-container">
+                <div class="App-header-small">
+
+                    <div class="App-header-menu-icon-block"><svg stroke="currentColor" fill="currentColor"
+                            stroke-width="0" viewBox="0 0 24 24" class="App-header-menu-icon" height="1em" width="1em"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+                            </g>
+                        </svg></div>
+                    <ul class="menu-list">
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="dashboard.html">
+                            <li>Dashboard</li>
+                        </a>
+                        <li>NFT</li>
+                        <a href="earn.html">
+                            <li>Earn</li>
+                        </a>
+                        <li>Buy</li>
+                        <li>Referral</li>
+                        <li>Ecosystem</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <a href="index.html" class="logo-link"><img src="assests/images/New Logo.png"
+                            alt="Romi Finance Logo" style="height: 40px; vertical-align: middle;">
+                        <span>Romi Finance</span>
+                    </a>
+                </div>
+
+                <ul class="menu">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="dashboard.html">
+                        <li>Dashboard</li>
+                    </a>
+                    <li>NFT</li>
+                    <a href="earn.html">
+                        <li>Earn</li>
+                    </a>
+                    <li>Buy</li>
+                    <li>Referral</li>
+                    <li>Ecosystem</li>
+                    <li>About</li>
+                </ul>
+                <button class="button1">Trade</button>
+                <button class="connect-button" id="openModalButton"><img
+                        src="https://zomi.finance/static/media/ic_wallet_24.a19a6758.svg">Connect Wallet</button>
+                <button class="connect-button1" id="openModalButton"><img
+                        src="https://zomi.finance/static/media/ic_wallet_24.a19a6758.svg">Connect </button>
+
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <button class="close-button" id="closeModalButton">&times;</button>
+
+                        <p>Connect Wallet</p>
+                        <div class="line"></div>
+                        <div class="Wallet-box"><button class="Wallet-btn MetaMask-btn">
+                                <div>MetaMask</div>
+                            </button></div>
+                        <div class="Wallet-box"><button class="Wallet-btn CoinbaseWallet-btn">
+                                <div>Coinbase Wallet</div>
+                            </button></div>
+                        <div class="Wallet-box"><button class="Wallet-btn WalletConnect-btn">
+                                <div>WalletConnect</div>
+                            </button></div>
+                    </div>
+                </div>
+                <div class="overlay" id="overlay"></div>
+                <script src="scripts/script.js"></script>
+
+                <div class="header-icon">
+                    <img src="https://zomi.finance/static/media/ic_eth_24.6b1d8a1d.svg">
+                    <div class="btn-primary "><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 20 20" color="white" height="20" width="20" xmlns="http://www.w3.org/2000/svg"
+                            style="color: white;">
+                            <path
+                                d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z">
+                            </path>
+                        </svg></div>
+                </div>
+            </div>
+
+
+
+        </header>
+
+        <div class="section-container">
+            <div class="section-title">
+                <div class="section-title-title">Earn
+                </div>
+                <div class="section-description">
+                    Stake $ZOMI and $ZLP to earn rewards.
+                </div>
+            </div>
+            <div class="dashboard-content">
+                <div class="dashboard-card1">
+                    <div class="App-card1">
+                        <div class="card-title">$ZOMI</div>
+                        <div class="card-divider-line"></div>
+                        <div class="card-content">
+                            <div class="card-row">
+                                <div class="label">Price</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">$0.00</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Wallet</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>..$ZOMI&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Staked</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>..$ZOMI&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-divider-line"></div>
+                            <div class="card-row">
+                                <div class="label">APR</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">...%</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Rewards</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">$..</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Multiplier Points APR</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">100.00%</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Boost Percentage</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">...%</span></span>
+                                </div>
+                            </div>
+                            <div class="card-divider-line"></div>
+                            <div class="card-row">
+                                <div class="label">Total Staked</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>0 ZOMI&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Total Supply</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>10,000&nbsp;$ZOMI($10)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-divider-line"></div>
+                            <button class="button1">Buy $ZOMI</button>
+                        </div>
+                    </div>
+                    <div class="App-card2">
+                        <div class="card-title">Total Rewards</div>
+                        <div class="card-divider-line"></div>
+                        <div class="card-content">
+                            <div class="card-row">
+                                <div class="label">ETH (WETH)</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>...&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">$ZOMI</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>...&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Escrowed $ZOMI</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>...&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Multiplier Points</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">...</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Staked Multiplier Points</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">...</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Total</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">$...</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-divider-line"></div>
+                        <button class="button1" id="openModalButton2">Connect Wallet</button>
+                        <div class="modal" id="modal">
+                            <div class="modal-content">
+                                <button class="close-button" id="closeModalButton">&times;</button>
+
+                                <p>Connect Wallet</p>
+                                <div class="line"></div>
+                                <div class="Wallet-box"><button class="Wallet-btn MetaMask-btn">
+                                        <div>MetaMask</div>
+                                    </button></div>
+                                <div class="Wallet-box"><button class="Wallet-btn CoinbaseWallet-btn">
+                                        <div>Coinbase Wallet</div>
+                                    </button></div>
+                                <div class="Wallet-box"><button class="Wallet-btn WalletConnect-btn">
+                                        <div>WalletConnect</div>
+                                    </button></div>
+                            </div>
+                        </div>
+                        <div class="overlay" id="overlay"></div>
+
+                    </div>
+                </div>
+
+                <div class="dashboard-card2">
+                    <div class="App-card1">
+                        <div class="card-title">$ZLP (Ethereum)</div>
+                        <div class="card-divider-line"></div>
+                        <div class="card-content">
+                            <div class="card-row">
+                                <div class="label">Price</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">$0.00</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Wallet</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>..$ZLP&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Staked</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>..$ZLP&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-divider-line"></div>
+                            <div class="card-row">
+                                <div class="label">APR</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">...%</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Rewards</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">$...</span></span>
+                                </div>
+                            </div>
+
+                            <div class="card-divider-line"></div>
+                            <div class="card-row">
+                                <div class="label">Total Staked</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>0 ZLP&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Total Supply</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>0 ZLP&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-divider-line"></div>
+                            <button class="button1">Buy $ZLP</button>
+                            <button class="button1">Sell $ZLP</button>
+                        </div>
+                    </div>
+                    <div class="App-card2">
+                        <div class="card-title">$ZOMI</div>
+                        <div class="card-divider-line"></div>
+                        <div class="card-content">
+                            <div class="card-row">
+                                <div class="label">Price</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">$0.00</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Wallet</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>es$ZOMI&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Staked</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>es$ZOMI&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-divider-line"></div>
+                            <div class="card-row">
+                                <div class="label">APR</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">...%</span></span>
+                                </div>
+                            </div>
+
+                            <div class="card-row">
+                                <div class="label">Multiplier Points APR</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">100.00%</span></span>
+                                </div>
+                            </div>
+
+                            <div class="card-divider-line"></div>
+                            <div class="card-row">
+                                <div class="label">Total Staked</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>0 ZOMI&nbsp;($...)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Total Supply</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">
+                                            <td>
+                                                1,023,379 es$ZOMI&nbsp;($1,044)</td>
+                                        </span></span>
+                                </div>
+                            </div>
+                            <div class="card-divider-line"></div>
+                            <button class="button1" id="openModalButton3">Connect Wallet</button>
+                            <div class="modal" id="modal">
+                                <div class="modal-content">
+                                    <button class="close-button" id="closeModalButton">&times;</button>
+
+                                    <p>Connect Wallet</p>
+                                    <div class="line"></div>
+                                    <div class="Wallet-box"><button class="Wallet-btn MetaMask-btn">
+                                            <div>MetaMask</div>
+                                        </button></div>
+                                    <div class="Wallet-box"><button class="Wallet-btn CoinbaseWallet-btn">
+                                            <div>Coinbase Wallet</div>
+                                        </button></div>
+                                    <div class="Wallet-box"><button class="Wallet-btn WalletConnect-btn">
+                                            <div>WalletConnect</div>
+                                        </button></div>
+                                </div>
+                            </div>
+                            <div class="overlay" id="overlay"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="section-title">
+                <div class="section-title-title">Vest
+                </div>
+                <div class="section-description">
+                    Convert esZOMI tokens to $ZOMI tokens.<br>
+                    Please read the vesting details before using the vaults.
+                </div>
+            </div>
+            <div class="dashboard-content">
+                <div class="dashboard-card1">
+                    <div class="App-card1">
+                        <div class="card-title">$ZOMI Vault</div>
+                        <div class="card-divider-line"></div>
+                        <div class="card-content">
+                            <div class="card-row">
+                                <div class="label">Staked Tokens</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">...</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Reserved for Vesting</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">0.00 / ...</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Vesting Status</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">0.0000 / 0.0000</span></span>
+                                </div>
+                            </div>
+
+                            <div class="card-row">
+                                <div class="label">Claimable</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">0.0000 $ZOMI</span></span>
+                                </div>
+                            </div>
+
+                            <div class="card-divider-line"></div>
+                            <button class="button1" id="openModalButton4">Connect Wallet</button>
+                            <div class="modal" id="modal">
+                                <div class="modal-content">
+                                    <button class="close-button" id="closeModalButton">&times;</button>
+
+                                    <p>Connect Wallet</p>
+                                    <div class="line"></div>
+                                    <div class="Wallet-box"><button class="Wallet-btn MetaMask-btn">
+                                            <div>MetaMask</div>
+                                        </button></div>
+                                    <div class="Wallet-box"><button class="Wallet-btn CoinbaseWallet-btn">
+                                            <div>Coinbase Wallet</div>
+                                        </button></div>
+                                    <div class="Wallet-box"><button class="Wallet-btn WalletConnect-btn">
+                                            <div>WalletConnect</div>
+                                        </button></div>
+                                </div>
+                            </div>
+                            <div class="overlay" id="overlay"></div>
+
+                        </div>
+                    </div>
+                    <div class="App-card2">
+                        <div class="card-title">$ZLP Vault</div>
+                        <div class="card-divider-line"></div>
+                        <div class="card-content">
+                            <div class="card-row">
+                                <div class="label">Staked Tokens</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">... $ZLP</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Reserved for Vesting</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">0.00 / ...</span></span>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="label">Vesting Status</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">0.0000 / 0.0000</span></span>
+                                </div>
+                            </div>
+
+                            <div class="card-row">
+                                <div class="label">Claimable</div>
+                                <div>
+                                    <span class="Tooltip"><span class="Tooltip-handle">0.0000 $ZOMI</span></span>
+                                </div>
+                            </div>
+
+                            <div class="card-divider-line"></div>
+                            <button class="button1" id="openModalButton5">Connect Wallet</button>
+                            <div class="modal" id="modal">
+                                <div class="modal-content">
+                                    <button class="close-button" id="closeModalButton">&times;</button>
+
+                                    <p>Connect Wallet</p>
+                                    <div class="line"></div>
+                                    <div class="Wallet-box"><button class="Wallet-btn MetaMask-btn">
+                                            <div>MetaMask</div>
+                                        </button></div>
+                                    <div class="Wallet-box"><button class="Wallet-btn CoinbaseWallet-btn">
+                                            <div>Coinbase Wallet</div>
+                                        </button></div>
+                                    <div class="Wallet-box"><button class="Wallet-btn WalletConnect-btn">
+                                            <div>WalletConnect</div>
+                                        </button></div>
+                                </div>
+                            </div>
+                            <div class="overlay" id="overlay"></div>
+                            <script src="scripts/button-script.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-divider-line"></div>
+            <div class="footer">
+                <div class="footer-wrapper">
+                    <div class="footer-logo">
+                        <img src="assests/images/New Logo.png" alt="Romi Finance Logo"
+                            style="height: 40px; vertical-align: middle;"> Romi Finance
+                    </div>
+                    <div class="footer-social-links">
+                        <a class="App-social-link" href="https://twitter.com/zomi.finance" target="_blank"
+                            rel="noopener noreferrer"><img
+                                src="https://zomi.finance/static/media/ic_twitter.9f35b403.svg" alt="Twitter"></a>
+                        <a class="App-social-link" href="https://zomifinance.medium.com/" target="_blank"
+                            rel="noopener noreferrer"><img
+                                src="https://zomi.finance/static/media/ic_medium.f6051b2e.svg" alt="Medium"></a>
+                        <a class="App-social-link" href="https://github.com/zomi" target="_blank"
+                            rel="noopener noreferrer"><img
+                                src="https://zomi.finance/static/media/ic_github.dbd4de8a.svg" alt="Github"></a>
+                        <a class="App-social-link" href="https://t.me/zomichat" target="_blank"
+                            rel="noopener noreferrer"><img
+                                src="https://zomi.finance/static/media/ic_telegram.af1a4a66.svg" alt="Telegram"></a>
+                        <a class="App-social-link" href="https://discord.gg/senshilabs" target="_blank"
+                            rel="noopener noreferrer"><img
+                                src="https://zomi.finance/static/media/ic_discord.be4d716c.svg" alt="Discord"></a>
+                    </div>
+                    <div class="footer-links1">
+
+                        <a class="footer-links" href="#/terms-and-conditions">Terms and Conditions</a>
+                        <a class="footer-links-2" href="#/referral-terms">Referral Terms</a>
+                        <a target="_blank" href="https://docs.zomi.finance" class="footer-links-3"
+                            rel="noopener noreferrer">Media Kit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

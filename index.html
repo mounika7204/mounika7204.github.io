@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Romi Finance</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="App-header-small">
+
+                <div class="App-header-menu-icon-block"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 24 24" class="App-header-menu-icon" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+                        </g>
+                    </svg></div>
+                <ul class="menu-list">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="dashboard.html">
+                        <li>Dashboard</li>
+                    </a>
+                    <li>NFT</li>
+                    <a href="earn.html">
+                        <li>Earn</li>
+                    </a>
+                    <li>Buy</li>
+                    <li>Referral</li>
+                    <li>Ecosystem</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="index.html" class="logo-link"><img src="assests/images/New Logo.png" alt="Romi Finance Logo"
+                        style="height: 40px; vertical-align: middle;">
+                    <span>Romi Finance</span>
+                </a>
+            </div>
+
+            <ul class="menu">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="dashboard.html">
+                    <li>Dashboard</li>
+                </a>
+                <li>NFT</li>
+                <a href="earn.html">
+                    <li>Earn</li>
+                </a>
+                <li>Buy</li>
+                <li>Referral</li>
+                <li>Ecosystem</li>
+                <li>About</li>
+            </ul>
+            <button class="button1">Trade</button>
+            <button class="connect-button" id="openModalButton"><img
+                    src="https://zomi.finance/static/media/ic_wallet_24.a19a6758.svg">Connect Wallet</button>
+            <button class="connect-button1" id="openModalButton"><img
+                    src="https://zomi.finance/static/media/ic_wallet_24.a19a6758.svg">Connect </button>
+
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <button class="close-button" id="closeModalButton">&times;</button>
+
+                    <p>Connect Wallet</p>
+                    <div class="line"></div>
+                    <div class="Wallet-box"><button class="Wallet-btn MetaMask-btn">
+                            <div>MetaMask</div>
+                        </button></div>
+                    <div class="Wallet-box"><button class="Wallet-btn CoinbaseWallet-btn">
+                            <div>Coinbase Wallet</div>
+                        </button></div>
+                    <div class="Wallet-box"><button class="Wallet-btn WalletConnect-btn">
+                            <div>WalletConnect</div>
+                        </button></div>
+                </div>
+            </div>
+            <div class="overlay" id="overlay"></div>
+            <script src="scripts/script.js"></script>
+
+            <div class="header-icon">
+                <img src="https://zomi.finance/static/media/ic_eth_24.6b1d8a1d.svg">
+                <div class="btn-primary "><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 20 20" color="white" height="20" width="20" xmlns="http://www.w3.org/2000/svg"
+                        style="color: white;">
+                        <path
+                            d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z">
+                        </path>
+                    </svg></div>
+            </div>
+        </div>
+
+
+
+    </header>
+    <div class="App">
+        <div class="description">
+            <div class="home-title">
+                Decentralized
+                <br>Perpetual Exchange
+            </div>
+            <div class="home-description">
+                Trade BTC, ETH, AVAX and other top <br>cryptocurrencies with up to 30x leverage<br> directly from your
+                wallet
+            </div>
+            <button class="lanuch-button">Lanuch Exchange</button>
+        </div>
+        <div class="info-container">
+
+            <div class="block1">
+                <img src="https://zomi.finance/static/media/ic_trading.2c53815a.svg" alt="Total Trading Icon"
+                    class="info-icon">
+                <div class="info-content">
+                    <div class="info-title">Total Trading Volume</div>
+                    <div class="info-value">$0</div>
+                </div>
+
+            </div>
+            <div class="info-block">
+                <img src="https://zomi.finance/static/media/ic_stats.f0a18011.svg" alt="Total Trading Icon"
+                    class="info-icon">
+                <div class="info-content">
+                    <div class="info-title">Open Interest</div>
+                    <div class="info-value">$0</div>
+                </div>
+
+            </div>
+            <div class="info-block">
+                <img src="https://zomi.finance/static/media/ic_totaluser.ae09b310.svg" alt="Total Trading Icon"
+                    class="info-icon">
+                <div class="info-content">
+                    <div class="info-title">Total Users</div>
+                    <div class="info-value">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="benefit-container">
+            <div class="home-benefit">
+                <div class="benefit-icon">
+                    <img src="https://zomi.finance/static/media/ic_liquidity.505b3f30.svg" alt="reduce liquidation icon"
+                        class="icon">
+
+                    <div class="benefit-title">Reduce Liquidation Risks</div>
+                </div>
+                <div class="benefit-description">
+                    An aggregate of high-quality price <br>feeds determine when liquidations <br>occur. This keeps
+                    positions safe <br>from temporary wicks.
+                </div>
+            </div>
+            <div class="home-benefit">
+                <div class="benefit-icon">
+                    <img src="https://zomi.finance/static/media/ic_cost.b4a729d3.svg" alt="Save on Costs" class="icon">
+
+                    <div class="benefit-title">Save on Costs</div>
+                </div>
+                <div class="benefit-description">
+                    Enter and exit positions with <br>minimal spread and zero price <br>impact. Get the optimal
+                    price<br> without incurring additional costs.
+                </div>
+            </div>
+            <div class="home-benefit">
+                <div class="benefit-icon">
+                    <img src="https://zomi.finance/static/media/ic_simpleswaps.2005009f.svg" alt="Simple swaps"
+                        class="icon">
+
+                    <div class="benefit-title">Simple Swaps</div>
+                </div>
+                <div class="benefit-description">
+                    Open positions through a simple <br>swap interface. Conveniently swap <br>from any supported asset
+                    into the <br>position of your choice.
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-info">
+                <div class="card-info-title">
+                    Two tokens create<br> our ecosystem
+                </div>
+            </div>
+        </div>
+        <div class="card-option-container">
+            <div class="card-option1">
+                <div class="option-icon">
+                    $ZOMI
+                </div>
+                <div class="option-info">
+                    <div class="option-title">$ZOMI is the utility and governance token. Accrues 30% of the platform's
+                        generated fees.</div>
+                    <div class="option-apr">Ethereum APR: 0.00%</div>
+                    <div class="option-action">
+                        <div class="buy">
+                            Buy
+                        </div>
+                        <div class="readmore">
+                            Read More
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-option2">
+                <div class="option-icon">
+                    $ZLP
+                </div>
+                <div class="option-info">
+                    <div class="option-title">$ZLP is the liquidity provider token. Accrues 70% of the platform's
+                        generated fees.</div>
+                    <div class="option-apr">Ethereum APR: 1,653,265,449.23%</div>
+                    <div class="option-action">
+                        <div class="buy">
+                            Buy
+                        </div>
+                        <div class="readmore">
+                            Read More
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer">
+            <div class="footer-wrapper">
+                <div class="footer-logo">
+                    <img src="assests/images/New Logo.png" alt="Romi Finance Logo"
+                        style="height: 40px; vertical-align: middle;"> Romi Finance
+                </div>
+                <div class="footer-social-links">
+                    <a class="App-social-link" href="https://twitter.com/zomi.finance" target="_blank"
+                        rel="noopener noreferrer"><img src="https://zomi.finance/static/media/ic_twitter.9f35b403.svg"
+                            alt="Twitter"></a>
+                    <a class="App-social-link" href="https://zomifinance.medium.com/" target="_blank"
+                        rel="noopener noreferrer"><img src="https://zomi.finance/static/media/ic_medium.f6051b2e.svg"
+                            alt="Medium"></a>
+                    <a class="App-social-link" href="https://github.com/zomi" target="_blank"
+                        rel="noopener noreferrer"><img src="https://zomi.finance/static/media/ic_github.dbd4de8a.svg"
+                            alt="Github"></a>
+                    <a class="App-social-link" href="https://t.me/zomichat" target="_blank"
+                        rel="noopener noreferrer"><img src="https://zomi.finance/static/media/ic_telegram.af1a4a66.svg"
+                            alt="Telegram"></a>
+                    <a class="App-social-link" href="https://discord.gg/senshilabs" target="_blank"
+                        rel="noopener noreferrer"><img src="https://zomi.finance/static/media/ic_discord.be4d716c.svg"
+                            alt="Discord"></a>
+                </div>
+                <div class="footer-links1">
+
+                    <a class="footer-links" href="#/terms-and-conditions">Terms and Conditions</a>
+                    <a class="footer-links-2" href="#/referral-terms">Referral Terms</a>
+                    <a target="_blank" href="https://docs.zomi.finance" class="footer-links-3"
+                        rel="noopener noreferrer">Media Kit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
